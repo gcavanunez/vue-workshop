@@ -101,13 +101,13 @@ const { cancel, save, triggerDelete, triggerUpdate, userForm } = useUserForm(use
                     <div class="space-x-4">
                         <button
                             class="border border-gray-500 bg-white px-1"
-                            @click="triggerUpdate(row)"
+                            @click="triggerUpdate(row as User)"
                         >
                             Edit
                         </button>
                         <button
                             class="border border-gray-500 bg-white px-1"
-                            @click="triggerDelete(row)"
+                            @click="triggerDelete(row as User)"
                         >
                             Delete
                         </button>
